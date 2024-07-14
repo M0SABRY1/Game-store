@@ -1,0 +1,92 @@
+body {
+  font-family: "Comfortaa";
+  overflow: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nerko One", cursive;
+}
+
+.main-bg {
+  background-color: #32353a;
+}
+
+.nav-link {
+  font-size: .8125rem;
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 1.875rem;
+  font-weight: 500;
+  color: white;
+  --bs-navbar-brand-hover-color: #0b7daa;
+}
+
+.nav-bg {
+  background-color: #3a497b;
+}
+
+/* #0B7DAA */
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #0b7daa;
+}
+
+.navbar-nav .nav-link {
+  --bs-nav-link-hover-color: #0b7daa;
+  --bs-navbar-active-color: #0b7daa;
+}
+
+.details{
+  min-height:100vh;
+}
+
+
+/* loading */
+
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-bottom: 4px solid #FF3D00;
+  border-left: 4px solid transparent;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+.home .card{
+  transition: all 0.5s;
+}
+
+.home .card:hover{
+  transform: scale(1.2deg);
+}
